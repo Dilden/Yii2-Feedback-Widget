@@ -1,0 +1,21 @@
+{
+    "name": "dilden/yii2-feedback-widget",
+    "description": "This Yii2 extension is intended to enable live feedback from users on a Yii2 web app by automatically submitting feedback to Github or Bitbucket repo issues",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","feedback","widget"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Dilden",
+            "email": "dylan.hildenbrand@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "dilden\\feedbackwidget\\": ""
+        }
+    }
+}
