@@ -5,7 +5,7 @@ namespace dilden\feedbackwidget;
 /**
  * This is just an example.
  */
-class dil-feedback extends \yii\base\Widget
+class DildenFeedback extends \yii\base\Widget
 {
     public function run()
     {
