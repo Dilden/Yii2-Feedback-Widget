@@ -1,15 +1,19 @@
 <?php
 
 namespace app\components\yii2feedbackwidget;
-
 // namespace dilden\feedbackwidget;
+
+use Yii;
+use app\components\yii2feedbackwidget\DildenFeedbackAsset;
 
 class DildenFeedback extends \yii\base\Widget
 {
+	public function init() {
+		DildenFeedbackAsset::register($this);
+	}
+
     public function run()
     {
-    	// $this->registerJsFile('/assets/feedback.min.js');
-    	// $this->registerCssFile('/assets/feedback.min.css');
         return "Testing the update!";
     }
 }
