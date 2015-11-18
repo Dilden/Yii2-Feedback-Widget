@@ -5,10 +5,10 @@ namespace dilden\feedbackwidget;
 /**
  * This is just an example.
  */
-class AutoloadExample extends \yii\base\Widget
+class dil-feedback extends \yii\base\Widget
 {
     public function run()
     {
-        return "Hello!";
+        return "Testing the update!";
     }
 }
