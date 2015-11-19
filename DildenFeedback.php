@@ -9,11 +9,13 @@ use app\components\yii2feedbackwidget\DildenFeedbackAsset;
 class DildenFeedback extends \yii\base\Widget
 {
 	public function init() {
-		DildenFeedbackAsset::register($this);
+		
 	}
 
     public function run()
     {
+    	$view = $this->getView();
+    	DildenFeedbackAsset::register($view);
         return "Testing the update!";
     }
 }

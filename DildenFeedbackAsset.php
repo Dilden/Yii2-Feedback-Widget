@@ -6,16 +6,33 @@ use yii\web\AssetBundle;
 
 class DildenFeedbackAsset extends AssetBundle {
 
-	// public $basePath = '@webroot';
-	// public $baseUrl = '@web';
-	public $css = [ 
-	    '/assets/feedback.min.css'
-	]; 
-	public $js=[
-	     '/assets/feedback.min.js'
-	];
+	
 
 	//if this asset depends on other assets you may populate below array
 	public $depends = [
+		'yii\web\JqueryAsset',
 	];
+
+	public function init()
+    {
+        $this->setSourcePath(__DIR__ . '/assets');
+        $this->css = [ 
+		    '/assets/feedback.min.css'
+		]; 
+		$this->js=[
+		     '/assets/feedback.min.js'
+		];
+        parent::init();
+    }
+
+	/**
+     * Sets the source path if empty
+     * @param string $path the path to be set
+     */
+    protected function setSourcePath($path)
+    {
+        if (empty($this->sourcePath)) {
+            $this->sourcePath = $path;
+        }
+    }
 }
