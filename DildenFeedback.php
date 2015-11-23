@@ -5,7 +5,7 @@ namespace dilden\feedbackwidget;
 use Yii;
 use yii\base\Widget;
 use yii\helpers\Url;
-use app\components\yii2feedbackwidget\DildenFeedbackAsset;
+use dilden\feedbackwidget\DildenFeedbackAsset;
 
 class DildenFeedback extends Widget
 {
