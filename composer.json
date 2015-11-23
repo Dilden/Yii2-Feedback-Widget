@@ -1,8 +1,8 @@
 {
     "name": "dilden/yii2-feedback-widget",
-    "description": "This Yii2 extension is intended to enable live feedback from users on a Yii2 web app by automatically submitting feedback to Github or Bitbucket repo issues",
+    "description": "This Yii2 extension is intended to enable live feedback from users on a Yii2 web app by acting as a wrapper for the ivoviz/feedback plugin.",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","feedback","widget"],
+    "keywords": ["yii2","extension","feedback","widget", "wrapper"],
     "license": "GPL-3.0+",
     "authors": [
         {
