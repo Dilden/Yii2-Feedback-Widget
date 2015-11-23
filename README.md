@@ -16,6 +16,14 @@ Add
 
 to the repositories section of your `composer.json` file.
 
+Then add
+
+```
+"dilden/yii2-feedback-widget": "dev-master"
+```
+
+to the require section of your `composer.json` file.
+
 
 Usage
 -----
