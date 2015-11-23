@@ -14,7 +14,9 @@ class DildenFeedbackAsset extends AssetBundle {
 		]; 
 		$this->js = [
             'feedback.min.js',
-            'html2canvas.min.js'
+            'html2canvas.min.js',
+            // 'feedback.js',
+            // 'html2canvas.js'
 		];
         $this->depends = [
             'yii\web\JqueryAsset',

@@ -5,6 +5,7 @@ namespace app\components\yii2feedbackwidget;
 
 use Yii;
 use yii\base\Widget;
+use yii\helpers\Url;
 use app\components\yii2feedbackwidget\DildenFeedbackAsset;
 
 class DildenFeedback extends Widget
@@ -15,7 +16,7 @@ class DildenFeedback extends Widget
 	* Documentation for this widget can be found at https://github.com/ivoviz/feedback/blob/master/README.md
 	*
 	*/
-	public $ajaxURL = "site/feedback";
+	public $ajaxURL = '';
 	public $postBrowserInfo = 1;
 	public $postHTML = 1;
 	public $postURL = 1;
@@ -29,15 +30,15 @@ class DildenFeedback extends Widget
 	public $shadowBlur = 10;
 	public $lineJoin = "bevel";
 	public $lineWidth = 3;
-	public $html2CanvasURL = "html2canvas.min.js";
+	public $html2CanvasURL = "";
 	public $tpl = array();
-	public $onClose = "";
+	public $onClose = "function(){}";
 	public $screenshotStroke = 1;
 	public $highlightElement  = 1;
 	public $initialBox = 0;
 	public $feedbackButton = ".feedback-btn";
 	public $showDescriptionModal = 1;
-	public $onScreenshotTaken = "";
+	public $onScreenshotTaken = "function(){}";
 	public $isDraggable = 1;
 
 	public function init() {
@@ -51,7 +52,8 @@ class DildenFeedback extends Widget
 
     public function run() {
     	parent::run();
-    	DildenFeedbackAsset::register($this->view);
+    	$assetBundle = DildenFeedbackAsset::register($this->view);
+    	$html2CanvasURL =  $assetBundle->baseUrl. "/html2canvas.min.js";
         return $this->view->registerJs($this->renderWidget());
     }
 
@@ -71,14 +73,14 @@ class DildenFeedback extends Widget
 					shadowBlur: ".$this->shadowBlur.",
 					lineJoin: '".$this->lineJoin."',
 					lineWidth: ".$this->lineWidth.",
-					html2CanvasURL: '".$this->html2CanvasURL."',
-					onClose: '".$this->onClose."',
+					html2CanvasURL: '". $this->html2CanvasURL."',
+					onClose: ".$this->onClose.",
 					screenshotStroke: ".$this->screenshotStroke.",
 					highlightElement: ". $this->highlightElement .",
 					initialBox: ".$this->initialBox.",
 					feedbackButton: '".$this->feedbackButton."',
 					showDescriptionModal: ".$this->showDescriptionModal.",
-					onScreenshotTaken: '".$this->onScreenshotTaken."',
+					onScreenshotTaken: ".$this->onScreenshotTaken.",
 					isDraggable: ".$this->isDraggable.",
 					tpl: {
 						description: '".$this->tpl['description']."',
