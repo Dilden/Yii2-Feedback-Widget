@@ -1,7 +1,6 @@
 <?php
 
-namespace app\components\yii2feedbackwidget;
-// namespace dilden\feedbackwidget;
+namespace dilden\feedbackwidget;
 
 use Yii;
 use yii\base\Widget;

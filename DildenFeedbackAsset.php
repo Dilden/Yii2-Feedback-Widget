@@ -1,7 +1,7 @@
 <?php
 
-namespace app\components\yii2feedbackwidget;
-// namespace dilden\feedbackwidget;
+namespace dilden\feedbackwidget;
+
 use yii\web\AssetBundle;
 
 class DildenFeedbackAsset extends AssetBundle {
