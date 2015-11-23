@@ -1,6 +1,6 @@
 Yii2 Feedback Widget
 ====================
-This Yii2 extension is intended to enable live feedback from users on a Yii2 web app by automatically submitting feedback to Github or Bitbucket repo issues
+This Yii2 extension is intended to enable live feedback from users on a Yii2 web app by acting as a wrapper for the ivoviz/feedback js plugin.
 
 ## Installation
 
