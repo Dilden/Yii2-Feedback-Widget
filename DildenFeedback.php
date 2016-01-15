@@ -72,7 +72,7 @@ class DildenFeedback extends Widget
 					shadowBlur: ".$this->shadowBlur.",
 					lineJoin: '".$this->lineJoin."',
 					lineWidth: ".$this->lineWidth.",
-					html2CanvasURL: '". $this->html2CanvasURL."',
+					html2canvasURL: '". $this->html2CanvasURL."',
 					onClose: ".$this->onClose.",
 					screenshotStroke: ".$this->screenshotStroke.",
 					highlightElement: ". $this->highlightElement .",
