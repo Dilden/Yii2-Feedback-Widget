@@ -8,7 +8,7 @@ class DildenFeedbackAsset extends AssetBundle {
 
 	public function init()
     {
-        $this->sourcePath = '@app/components/yii2feedbackwidget/assets/';
+        $this->sourcePath = '@vendor/dilden/yii2-feedback-widget/assets/';
         $this->css = [ 
 		    'feedback.min.css'
 		]; 
