@@ -63,6 +63,8 @@ Setting up your controller to handle the AJAX response is simple enough. Simply 
 ```php
 namespace app\controllers;
 
+use yii\web\Response;
+
 class PinneappleController extends Controller
 {
 
