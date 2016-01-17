@@ -30,7 +30,7 @@ class DildenFeedback extends Widget
 	public $lineJoin = "bevel";
 	public $lineWidth = 3;
 	public $html2CanvasURL = "";
-	public $tpl = array();
+	// public $tpl = array();
 	public $onClose = "function(){}";
 	public $screenshotStroke = 1;
 	public $highlightElement  = 1;
