@@ -10,13 +10,14 @@ class DildenFeedbackAsset extends AssetBundle {
     {
         $this->sourcePath = '@vendor/dilden/yii2-feedback-widget/assets/';
         $this->css = [ 
-		    'feedback.min.css'
+		    // 'feedback.min.css'
+            'feedback.css'
 		]; 
 		$this->js = [
-            'feedback.min.js',
-            'html2canvas.min.js',
-            // 'feedback.js',
-            // 'html2canvas.js'
+            // 'feedback.min.js',
+            // 'html2canvas.min.js',
+            'feedback.js',
+            'html2canvas.js'
 		];
         $this->depends = [
             'yii\web\JqueryAsset',
